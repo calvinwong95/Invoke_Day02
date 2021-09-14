@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eduhub</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            div#container {
+                width: 900px;
+                height: auto;
+                background-color: aqua;
+                margin: auto;
+            }
+
+            nav {
+                width: 900px;
+                height: 80px;
+                background-color: #6D41BF;
+
+                padding-top: 30px;
+                padding-left: 50px;
+                box-sizing: border-box;
+            }
+
+            nav h1, nav ul , nav ul li {
+                display: inline-block;
+            }
+            
+            nav h1 {
+                margin-right: 20px;
+            }
+
+            nav ul li {
+                margin-right: 20px;
+                list-style-type: disc;
+            }
+
+            section {
+                width: 900px;
+                height: 300px;
+                background-color:lightcoral;
+                text-align: center;
+                padding-top: 100px;
+                box-sizing:border-box;
+            }
+
+            div.content {
+                width: 900px;
+                height: 500px;
+                background-color: purple;
+            }
+
+            div.content-header{
+                padding: 50px 0px; 
+                text-align: center;
+                background-color: pink;
+                box-sizing: border-box;
+
+            }
+
+            div.content-holder{
+                text-align: center;
+                background-color: yellow;
+                padding: 30px 0;
+                box-sizing: border-box;
+            }
+
+            div.offer-image, p.offer-paragraph {
+                background-color: lightgreen;
+                display: inline-block;
+                width: 400px;
+                height: 300px;
+                vertical-align: middle;
+
+            }
+
+            div.package-list {
+                width: 200px;
+                height: 250px;
+                background-color: white;
+                display: inline-block;
+                margin: 10px;
+                border-radius: 30px;
+                box-shadow: 2px 2px 20px rgba(0,0,0,10);
+                box-sizing: border-box;
+                overflow: hidden;
+                
+            }
+
+
+            div.student-list {
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                display: inline-block;
+                margin: 10px;
+                border-radius: 30px;
+                box-shadow: 2px 2px 20px rgba(0,0,0,10);
+            }
+
+           
+            .circle {
+                display: flex;
+                margin: auto;
+                width: 200px;
+                height: 200px;
+                background-color: darkblue;
+                border-radius: 50%;
+                overflow: hidden;
+                
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+        
+            }
+
+            div.submit-button {
+                width: 200px;
+                height: 50px;
+                background-color: orange;
+                text-align: center;
+                padding: 15px 0;
+                box-sizing: border-box;
+                border-radius: 20px;
+                border-style: solid;
+                border-color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <nav>
+                <h1>EduHub</h1>
+
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+
+                </ul>
+            </nav>
+
+            <section>
+                <h2>Eduhub <br> Get Smart!</h2>
+            </section>
+
+            <section>
+                <h2>Sign up now!</h2>
+
+                <form>
+                    <input placeholder="Your Email" type="email"/>
+                    <button>Sign Up</button>
+                </form>
+
+                
+                
+            </section>
+
+            <div class="content">
+                <div class="content-header">
+                    <h2>What We Offer</h2>
+                </div>
+
+                <div class="content-holder">
+                    <div class="offer-image">
+                        <img src=images/landscape1.jpg  />
+                    </div>
+                    <p class="offer-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-header">
+                    <h2>Our Package</h2>
+                </div>
+
+                <div class="content-holder">
+                    <div class="package-list">
+                        <img src="images/landscape1.jpg" />
+                    </div>
+                    <div class="package-list">
+                        <img src="images/landscape2.jpg" />
+                    </div>
+                    <div class="package-list">
+                        <img src="images/landscape3.jpg" />
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-header">
+                    <h2>What Student Says!</h2>
+                </div>
+
+                <div class="content-holder">
+                    <div class="student-list">
+                        <div class="circle">
+                            <img src="images/student1.jpg" />
+                        </div>
+                    </div>
+                    <div class="student-list">
+                        <div class="circle">
+                            <img src="images/student2.jpg" />
+                        </div>
+                    </div>
+                    <div class="student-list">
+                        <div class="circle">
+                            <img src="images/student3.jpg" />
+                        </div>
+                    </div>
+                    
+                    <div class="submit-button">
+                        <p>Apply Now</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
