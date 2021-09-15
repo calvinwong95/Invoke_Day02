@@ -1,78 +1,489 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <Title>Lorem Ipsum</Title>
+        <title>Omnis Voluptas</title>
         <style>
             * {
-                /* reset styling */
-                margin: 0px;
-                padding: 0px;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
-            div#container {
+
+            #container {
                 width: 900px;
-                height: 800px;
-                background-color: skyblue;
+                height: auto;
+                margin: auto;
             }
-
-            div#header {
-                text-align: center;
-            }
-
-            h1 {
-                margin-bottom: 15px;
-            }
-
-            div#content {
+            
+            nav {
                 width: 900px;
-                height: 800px;
-                background-color: lightgreen;
-                text-align: center;
+                height: 50px;
+                background-color: #4C0099;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+
             }
 
-            div.article {
-                width: 400px;
-                height: 250px;
-                /* float: left; */
-                display: inline-block;
-                background-color: red;
-                text-align: left;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                margin-left: 10px;
+            
+            nav h1 {
+                font-size: 25px;
+                color: white;
+
+            }
+
+            nav ul li {
+                font-size: 15px;
+                color: white;
                 margin-right: 10px;
+                list-style: none;
+                display: inline-block;
+            }
+
+            .button {
+                width: 150px;
+                height: 40px;
+                background-color: #4C0099;
+                border-radius: 20px;
+                border-color: white;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+                border-style: solid;
+                box-sizing: border-box;
+
+            }
+
+            
+
+            #explorecontainer {
+                width: 900px;
+                height: 500px;
+                background-color:#990099;
+                display: flex;
+            }
+
+            .explore {
+                width: 400px;
+                height: 500px;
+                background-color: #990099;
+                margin-left: 10px;
+            
+            }
+
+            .explore h1 {
+                color: white;
+                font-family: sans-serif;
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+
+            .explore p {
+                color: white;
+                font-family: sans-serif;
+                margin-bottom: 100px ;
+            }
+
+            .button-explore{
+                width: 150px;
+                height: 40px;
+                background-color: orange;
+                border-radius: 20px;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+                box-sizing: border-box;
+                margin: 50px 0px;
+
+            }
+
+            .explore-image {
+               width: 400px;
+               height: 500px;
+               margin: 0px 50px;
+               background-color:#990099;
+            }
+
+            #descriptioncontainer {
+                width: 900px;
+                height:200px;
+                background-color:black;
+                display:flex;
+            }
+
+            .description {
+                width: 450px;
+                height: 200px;
+                background-color: white;
+            }
+
+            #p1 {
+                font-family: sans-serif;
+                font-size: 15px;
+                color: black;
+                margin: 90px 0px 5px 30px;
+
+
+            }
+
+            #p2 {
+                font-family: sans-serif;
+                font-size: 30px;
+                color:black;
+                margin: 0px 0px 30px 30px;
+                
+            }
+
+            #p3 {
+                font-family: sans-serif;
+                font-size: 13px;
+                color: black;
+                margin: 60px 20px;
+            }
+
+            #selectioncontainer {
+                width: 900px;
+                height: 30px;
+                background-color: white;
+                
+            }
+
+            .selection {
+                margin-left: 50px;
+                background-color: white;
+            }
+             
+            .selection ul li {
+                font-size: 15px;
+                color: black;
+                margin-top: 5px;
+                margin-right: 25px;
+                list-style: none;
+                display: inline-block;
+            }
+
+            #imagecontainer {
+                width: 900px;
+                height: 300px;
+                background-color: white;
+            }
+            .image {
+
+                display: flex;
+                margin-left: 50px;
+            }
+            img {
+                margin-right:15px;
+                width: 250px;
+                height: 200px;
+            }
+
+            #temposcontainer {
+                width: 900px;
+                height:500px;
+                background-image:url(day2_challanges/day2_challanges/images/about_bg.png);
+                background-size: 100%;
+                background-color: darkblue;
+                display: flex;
+            }
+
+            .image2 {
+                width: 400px;
+                height: 600px;
+            }
+
+            .tempos {
+                width: 400px;
+                height: 600px;
+                margin-left: 50px;
+            }
+
+            #p4 {
+                font-family: sans-serif;
+                font-size: 15px;
+                color: white;
+                margin-top: 150px;
+                margin-left: 20px;
+            }
+
+            #p5 {
+                font-family: sans-serif;
+                font-size: 30px;
+                color: white;
+                margin-top: 5px;
+                margin-left: 20px;
+            }
+            
+            #p6 {
+                font-family: sans-serif;
+                font-size: 15px;
+                color: white;
+                margin-top: 5px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #fugiatcontainer {
+                width: 900px;
+                height: 600px;
+                background-color: lightgrey;
+            }
+
+            #fugiatdescription {
+                width: 450px;
+                height: 100px;
+                background-color: lightgrey;
+                text-align: center;
+                font-family: sans-serif;
+                margin: auto;
+                margin-top:100px;
+            }
+
+            .fugiatgrid {
+                width: 765px;
+                height: 155px;
+                display: flex;
+                margin: auto;
+                
+            }
+
+
+            .grid {
+                width: 250px;
+                height: 150px;
+                background-color: white;
+                display: inline-block;
+                box-sizing: border-box;
+                text-align: center;
+                margin: auto;
+            }
+
+            .grid img {
+                width: 50px;
+                height: 50px;
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .grid p {
+                font-size: 15px;
+                font-family: sans-serif;
+
+            }
+
+            #footercontainer {
+                width: 900px;
+                height: 600px;
+                background-color: white;
+                padding: 100px;
+            }
+
+            #footerdescription {
+                width: 450px;
+                height: 100px;
+                background-color: white;
+                text-align: center;
+                font-family: sans-serif;
+                margin: auto;
+            }
+
+
+            .footgrid {
+                width: 200px;
+                height: 150px;
+                background-color: white;
+                display: inline-block;
+                margin: 10px;
+                box-shadow: 2px 2px 20px rgba(0,0,0,10);
+                box-sizing: border-box;
+                padding-left: 5px;
+            }
+
+            .footgrid img {
+                width: 50px;
+                height: 50px;
+                margin-left: 15px;
+                margin-top:10px;
+            }
+
+            #p7 {
+                font-family: sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+
+            #p8 {
+                font-family: sans-serif;
+                font-size: 15px;
+                color: black;
             }
         </style>
     </head>
 
     <body>
-        <div id="container">
-            <div id="header">
-                <h1>Lorem Ipsum</h1>
-                <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-                <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+        <div id=container>
+            <!--Navbar Section-->
+            <nav>
+                <h1>Relap</h1>
+
+                <ul>
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li>People</li>
+                    <li>News</li>
+                </ul>
+
+                <div class=button>
+                    <p>Contact Us</p>
+                </div>
+            </nav>
+
+            <!--Explore Section-->
+            <div id=explorecontainer>
+                <div class=explore>
+                    <h1> Omni <br> Voluptas </h1>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+
+                    <div class=button-explore>
+                        <p>Explore</p>
+                    </div>
+
+                </div>
+
+                <div class=explore-image>
+                    <img src="C:\Users\Lenovo\Desktop\InvokeFrontEnd\Day02\day2_challanges\day2_challanges\images\banner_bg.png" style="width:100% ; height: 100%; display:flex;"/>
+                </div>
 
             </div>
-            
-            <div id="content">
-                <div class="article">
-                    <h4>What is Lorem Ipsum</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            <!--Description Section-->
+
+            <div id=descriptioncontainer>
+                <div class=description>
+                    <p id=p1>Nisi ut allquid </p>
+                    <p id=p2>Ullam corporis suscipit</p>
                 </div>
 
-                <div class="article">
-                    <h4>Why do we use it?</h4>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <div class=description>
+                    <p id=p3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content ny desktop publishing packages and web page editors now</p>
+                </div>
+            </div>
+
+            <!--Selection Section-->
+
+            <div id=selectioncontainer>
+                <div class=selection>
+                    <ul>
+                        <li>Quis Autem</li>
+                        <li>Reprehedient</li>
+                        <li>Volupte</li>
+                        <li>Molestiate</li>
+                        <li>Consequentur</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Image Section-->
+
+            <div id=imagecontainer>
+                <div class=image>
+                    <img src="C:\Users\Lenovo\Desktop\InvokeFrontEnd\Day02\day2_challanges\day2_challanges\images\gallery_1.png" />
+                    <img src="day2_challanges\day2_challanges\images\gallery_2.png" />
+                    <img src="day2_challanges\day2_challanges\images\gallery_3.png" />
+                </div>
+            </div>
+
+            <!--Tempos Section-->
+
+            <div id=temposcontainer>
+                <div class=image2>
+                    <img src="day2_challanges\day2_challanges\images\about_img.png"  style="width:300px ; height: 300px; margin-top:100px; margin-left:50px;"  />
+                </div>
+                    
+                <div class=tempos>
+                    <p id=p4>Repenlledus</p>
+                    <p id=p5>Temporibus quibusdam</p>
+                    <p id=p6>Nam Iloe afhuf cum sjiad oeka ifjei cask nasdk kqwj ofoq nqd kfjsd nqjwenefenj fekjfe asnjd knasckn knacs. <br> Our Team.</p>
+                </div>
+            </div>
+
+            <!--Fugiat Section-->
+
+            <div id=fugiatcontainer>
+                <div id=fugiatdescription>
+                    <h1>Fugiat Quo</h1>
+                    <p>Sed ut persicpis omins late natus error sit volumptiam accusamif doloremque laudaniu, temef rem amprem.</p>
                 </div>
 
-                <div class="article">
-                    <h4>Where does it come from?</h4>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <div class=fugiatgrid>
+                    <div class=grid>
+                        <img src="day2_challanges\day2_challanges\images\icon_1.png" />
+                        <p id=p8><b>Consequentur</b></p>
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifasd aaheif fhiaefhia cahischia</p>
+                    </div>
+                    <div class=grid>
+                        <img src="day2_challanges\day2_challanges\images\icon_2.png" />
+                        <p id=p8><b>Consequentur</b></p>
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                    </div>
+                    <div class=grid>
+                        <img src="day2_challanges\day2_challanges\images\icon_3.png" />
+                        <p id=p8><b>Consequentur</b></p>
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                    </div>
                 </div>
 
-                <div class="article">
-                    <h4>Where can I get some?</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div class=fugiatgrid>
+                    <div class=grid>
+                        <img src="day2_challanges\day2_challanges\images\icon_4.png" />
+                        <p id=p8><b>Consequentur</b></p>
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                    </div>
+                    <div class=grid>
+                        <img src="day2_challanges\day2_challanges\images\icon_5.png" />
+                        <p id=p8><b>Consequentur</b></p>
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                    </div>
+                    <div class=grid>
+                        <img src="day2_challanges\day2_challanges\images\icon_6.png" />
+                        <p id=p8><b>Consequentur</b></p>
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                    </div>
                 </div>
+
+            </div>
+
+             <!--Footer Section-->
+
+             <div id=footercontainer>
+                <div id=footerdescription>
+                    <p id=p7><b>Testimonial</b></p>
+                    <p id=p8>Sed ut persicpis omins late natus error sit volumptiam accusamif doloremque laudaniu, temef rem amprem.</p>
+                </div>
+
+               
+                <div class=footgrid>
+                        <img src="day2_challanges\day2_challanges\images\profile_1.png" />
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                        <p id=p8><b>Malin Quist</b></p>
+                </div>
+                <div class=footgrid>
+                        <img src="day2_challanges\day2_challanges\images\profile_1.png" />
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                        <p id=p8><b>Malin Quist</b></p>
+                </div>
+                <div class=footgrid>
+                        <img src="day2_challanges\day2_challanges\images\profile_1.png" />
+                        <p id=p8>enim fuahfea maiefhi aichai fhaifa aaheif fhiaefhia cahischia</p>
+                        <p id=p8><b>Malin Quist</b></p>
+                </div>
+                
 
             </div>
         </div>
